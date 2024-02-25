@@ -1,30 +1,11 @@
-/* اعدادی به تعداد دلخواه از کاربر گرفته و آن را داخل ارایه ذخیره کند
-و سپس میانگین آنها را محاسبه کرده و نمایش دهد
+/*
+محصولات یک فروشگاه انلاین را در دیتابس ذخیره کرده و ارایه ای برای سبد خرید کاربر داشته باشید 
+و از کاربر اسم محصولی را که قصد اضافه کردن به سبد خرید دارد دریافت کنید
+اگر محصول درخواستی کاربر به انبار فروشگاه شما موجود بود آن را به سبد خرید کاربر اضافهکنید
+و سپس مبلغ کل سبد خرید را محاسبه کرده و به کاربر نمایش دهید
+درغیر این صورت به کاربر پیغام اتمام موجودی نمایش دهید
+نکته
+بعد از اضافه محصول به سبد خرید سبد را در کنسول نمایش دهید
+به طور دیفات 3 محصول با قیمت های مختلف به سلد خرید کاربر موجود باشد
+
 */
-
-users=[]
-for(i= 0; i < 3; i++){
-    username = prompt("Enter your name")
-    while(username.length < 3 || username.length > 15 ){
-        username= prompt("Enter your name")
-    }
-
-    userfamily = prompt("Enter your lastname")
-    while(userfamily.length < 3 || userfamily.length > 15){
-        userfamily=  prompt("Enter your lastname")
-    }
-    
-    userage = prompt("Enter your age")
-    while(isNaN(userage) || c.length > 3){
-        userage=  prompt("Enter your age")
-    }
-
-    var user = {
-        name: username,
-        lastname: userfamily,
-        age : userage
-    }
-    users.push(user)
-
-}
-console.log(users)
