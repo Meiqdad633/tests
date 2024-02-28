@@ -3,10 +3,7 @@
 */
 
 input = prompt("Enter the Palindrome Word")
-if(palindrome = input.split("").reverse().join('') == input){
-    document.write("the Palindrome Word is:  ",input)
-} else{
-    alert("Sorry, Wrong word")
-}
+palindrome = input.split("").reverse().join('') == input?document.write("the Palindrome Word is:  ",input):alert("Sorry, Wrong word")
+    
 
 
