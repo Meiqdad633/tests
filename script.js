@@ -1,23 +1,12 @@
+/*
+کلمه ای را از کاربر دریافت کرده و چک کنید که کلمه وارد شده از هردو سمت چپ و راست به یک صورت خوانده میشود
+*/
+
+input = prompt("Enter the Palindrome Word")
+if(palindrome = input.split("").reverse().join('') == input){
+    document.write("the Palindrome Word is:  ",input)
+} else{
+    alert("Sorry, Wrong word")
+}
 
 
-basket = [
-    {id:0, name: "pen",price:100},
-    {id:1, name: "book",price:200},
-    {id:2,name: "notebook",price:80},
-    {id:3,name: "pencil",price:60},
-    {id:4,name: "bill",price:110},
-    {id:5,name: "mobile",price:30}
-    ]
-
-sum = 0
-postpayment  = basket.filter((item)=>{
-    if (item.price < 100){
-        document.write(`product with 10$ shiping:  ${item.name} ${"<br>"}`)
-        item.price += 10
-    }
-    document.write(`product without shiping:  ${item.name} ${"<br>"}`)
-    sum+=item.price
-
-})
-
-document.write("the Total apyment with shiping is: ", sum)
