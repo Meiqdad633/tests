@@ -5,11 +5,11 @@
 */
 seconds  = parseInt(prompt("timer seconds: ")), minute = parseInt(prompt("timer minutes: "))
 
-totalSeconds =  (minute * 60) + seconds
+totalSeconds = minute * 60
 
 console.log(totalSeconds) 
 setInterval(()=>{
-  document.write(totalSeconds)
   totalSeconds--
-  totalSeconds === 0? clearInterval:"finish"
-})
+  document.write(totalSeconds, "<br>")
+  totalSeconds === 0? (clearInterval(totalSeconds),alert("finished")):""
+}, seconds * 1000)
