@@ -1,5 +1,3 @@
-input =prompt("you have 5 secends to upload photo")
-
-setTimeout((e)=>{
-    !e?alert("photo uploading failed"):''
-},5000,input)
+/*
+یک لامپ با یک دکمه طراحی کنید که که با کلیک کردن روی دکمه لامپ روشن  و خاموش بشه
+*/
