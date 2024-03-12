@@ -7,16 +7,18 @@
     <title>Document</title>
 </head>
 <body>
-    <div style="text-align: center;">
-    <div>
-        <img src="./off.jpg" alt="lamp" width="20%" id="lamp">
-    </div>
-    <div>
-        <img src="./button.jpg" alt="lamp" style="width: 4%;" onclick="change()" >
-    </div>
-</div>
+<div style="text-align: center; padding-top: 5%;" >
+    <h1> login form</h1>
+    <form action="" id="form " style="border: 2px solid ; padding: 50px;margin:  0 20%  0 20%;">
+        <label for="user">Username</label>
+        <input type="text" id="user" class="username" placeholder="username" style="padding: 1%;"><br/><br/>
+        <label for="pass">Password </label>
+        <input type="password" placeholder="password" class="password" style="padding: 1%;""> <br> <br>
+        <button onclick="validation()" style="padding: 1%;"> Login</button>
+    </form>
+</div> 
     
-    
-    <script src="script.js"></script>
+    <script src="script.js"></script>    
+
 </body>
 </html>
