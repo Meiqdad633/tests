@@ -11,9 +11,9 @@
     <h1> login form</h1>
     <form action="" id="form " style="border: 2px solid ; padding: 50px;margin:  0 20%  0 20%;">
         <label for="user">Username</label>
-        <input type="text" id="user" class="username" placeholder="username" style="padding: 1%;"><br/><br/>
+        <input type="text" id="user" class="username" placeholder="username" style="padding: 1%;" onkeydown="lenUser()"> <span id="checkuser" ></span><br/><br/>
         <label for="pass">Password </label>
-        <input type="password" placeholder="password" class="password" style="padding: 1%;""> <br> <br>
+        <input type="password" placeholder="password" class="password" style="padding: 1%;" onkeydown="lenPass()"> <span id="checkpass"></span> <br> <br>
         <button onclick="validation()" style="padding: 1%;"> Login</button>
     </form>
 </div> 
